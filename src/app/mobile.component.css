@@ -1,81 +1,94 @@
-@media (min-width: 679px) {
+@media (max-width: 678px) {
   .main {
     width: 100vw;
     height: 100vh;
     background-color: hsl(230, 100%, 99%);
     position: relative;
+    overflow: hidden;
   }
 
   .top {
     background: url("../assets/pattern-circles.svg"),
       url("../assets/bg-pattern.svg");
-    background-size: 180px, cover;
+    background-size: 40%, cover;
     background-repeat: no-repeat;
     border-radius: 0px 0px 0px 150px;
-    height: 22%;
-    padding: 70px 20px 170px 20px;
-    background-position: center 7%;
+    height: 50%;
+    width: 100%;
+    background-position: center 35%;
+    position: relative;
   }
 
   .motto {
     text-align: center;
-    font-size: 35px;
+    font-size: 140%;
     font-family: "Manrope";
-    font-weight: 600;
+    font-weight: 800;
     color: hsl(227, 35%, 25%);
   }
 
   .info {
     font-family: "Manrope";
     text-align: center;
-    font-size: 18px;
+    font-size: 100%;
     font-weight: 500;
-    margin-top: 5px;
+    margin: 4%;
     color: hsl(225, 20%, 60%);
+    padding: 0% 18%;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
   }
 
   .interactive-price-container {
     background-color: white;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 33%;
+
+    width: 75%;
     display: grid;
-    padding: 35px 30px;
-    box-shadow: 0px 0px 30px -20px;
+    padding: 10% 7%;
+    box-shadow: 0px 0px 20px -20px;
     border-radius: 10px;
+    margin: 5% auto;
   }
 
   .pageviews-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     font-family: "Manrope";
-    align-items: center;
   }
 
   .pageviews {
     letter-spacing: 1px;
     word-spacing: 3px;
+    font-size: 90%;
     color: hsl(225, 20%, 60%);
-    font-weight: 600;
+    font-weight: 800;
   }
 
   .monthly {
     display: flex;
+    font-family: "Manrope";
+    justify-content: center;
     align-items: center;
+    margin-top: 15%;
   }
 
   .price {
     color: hsl(227, 35%, 25%);
-    font-size: 30px;
+    font-size: 200%;
     font-weight: 800;
   }
 
   .month {
     color: hsl(225, 20%, 60%);
     font-weight: 600;
-    margin-left: 5px;
+    font-size: 90%;
+    margin-left: 2%;
   }
 
   .slider {
@@ -124,15 +137,15 @@
   }
 
   .slidecontainer {
-    margin-top: 15px;
+    margin-top: 10%;
   }
 
   .mothly-billing-container {
     display: flex;
-    margin: 40px 0px;
+    margin: 10% 0px;
     font-family: "Manrope";
     color: hsl(225, 20%, 60%);
-    font-size: 15px;
+    font-size: 75%;
     font-weight: 600;
     align-items: center;
     justify-content: end;
@@ -180,10 +193,6 @@
     background-color: hsl(174, 86%, 45%);
   }
 
-  input:focus + .slider-bill {
-    box-shadow: 0 0 1px hsl(174, 86%, 45%);
-  }
-
   input:checked + .slider-bill:before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
@@ -198,50 +207,51 @@
   .slider-bill.round:before {
     border-radius: 50%;
   }
-  .slider-bill:hover {
-    background-color: hsl(174, 86%, 45%);
-  }
 
   .discount {
     background-color: hsl(14, 92%, 95%);
-    font-size: 11px;
+
     color: hsl(15, 100%, 70%);
-    padding: 2px 5px;
+    padding: 2% 2%;
     border-radius: 25px;
-    margin-left: 10px;
+    margin-left: 3%;
   }
   .right {
-    margin-right: 15px;
+    margin-right: 3%;
   }
   .horizontal {
     position: absolute;
-    width: 100%;
-    top: 58%;
+    width: 89%;
+    top: 63%;
+    left: 50%;
     border: none;
     border: 1px solid hsl(224, 65%, 95%);
+    transform: translate(-50%);
   }
   .footer-container {
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
     font-family: "Manrope";
-    margin-top: 50px;
+    margin-top: 15%;
+    justify-content: center;
   }
   .check-container {
     display: grid;
+    margin-bottom: 5%;
   }
   .check-data {
     display: flex;
-    font-size: 14px;
+    font-size: 85%;
     color: hsl(225, 20%, 60%);
     align-items: center;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 7%;
+    text-align: center;
   }
   .check {
   }
   .check-title {
-    margin-left: 10px;
+    margin-left: 5%;
   }
   .start-my-trial {
     background-color: hsl(227, 35%, 25%);
@@ -258,5 +268,7 @@
 
   .start-my-trial:hover {
     color: white;
+  }
+  .background {
   }
 }
